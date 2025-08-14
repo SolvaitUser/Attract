@@ -3,21 +3,6 @@ import React from "react";
 export type Language = "en" | "ar";
 export type TabKey = "dashboard" | "job-requisition" | "candidate" | "interview" | "offer" | "onboarding" | "careers-portal-setup" | "settings";
 
-// Helper function to get page title based on active tab and language
-export const getPageTitle = (tab: TabKey, language: Language): string => {
-  const titles = {
-    dashboard: { en: "Dashboard", ar: "لوحة المعلومات" },
-    "job-requisition": { en: "Job Requisition", ar: "طلبات الوظائف" },
-    candidate: { en: "Candidate", ar: "المرشحين" },
-    interview: { en: "Interview", ar: "المقابلة" },
-    offer: { en: "Offer", ar: "العروض" },
-    onboarding: { en: "Onboarding", ar: "التأهيل" },
-    "careers-portal-setup": { en: "Careers Portal Setup", ar: "إعداد بوابة الوظائف" },
-    settings: { en: "Settings", ar: "الإعدادات" },
-  };
-  return titles[tab][language];
-};
-
 interface AppContextType {
   language: Language;
   setLanguage: (language: Language) => void;

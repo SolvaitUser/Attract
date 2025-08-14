@@ -1,10 +1,10 @@
 import React from "react";
 import { Avatar, Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button } from "@heroui/react";
 import { Icon } from "@iconify/react";
-import { useAppContext, getPageTitle } from "../context/app-context";
+import { useAppContext } from "../context/app-context";
 
 export const Header: React.FC = () => {
-  const { language, setLanguage, activeTab, sidebarCollapsed, setSidebarCollapsed } = useAppContext();
+  const { language, setLanguage, sidebarCollapsed, setSidebarCollapsed } = useAppContext();
 
   const toggleLanguage = () => {
     setLanguage(language === "en" ? "ar" : "en");
@@ -30,12 +30,8 @@ export const Header: React.FC = () => {
         </button>
       </div>
 
-      {/* Page Title - Center */}
-      <div className="flex-1 flex justify-center">
-        <h1 className="text-lg lg:text-xl font-semibold text-gray-800 text-center">
-          {getPageTitle(activeTab, language)}
-        </h1>
-      </div>
+      {/* Middle spacer */}
+      <div className="flex-1" />
 
       {/* Right controls */}
       <div className="flex items-center space-x-4">
@@ -55,14 +51,14 @@ export const Header: React.FC = () => {
             <DropdownItem 
               key="en" 
               onPress={() => setLanguage("en")}
-              className={language === "en" ? "text-wise-blue" : ""}
+              className={language === "en" ? "text-attract-blue" : ""}
             >
               English
             </DropdownItem>
             <DropdownItem 
               key="ar" 
               onPress={() => setLanguage("ar")}
-              className={language === "ar" ? "text-wise-blue" : ""}
+              className={language === "ar" ? "text-attract-blue" : ""}
             >
               العربية
             </DropdownItem>
