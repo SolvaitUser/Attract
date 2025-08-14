@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: white;
+  color: #111827;
+}
+
+.rtl {
+  direction: rtl;
+}
+
+.ltr {
+  direction: ltr;
+}
+
+/* Custom Tab Styles */
+.custom-tabs {
+  border-bottom: 1px solid #EAECF0;
+}
+
+.custom-tab {
+  color: #64748B;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 10px;
+}
+
+.custom-tab.active {
+  color: #0070F3;
+  border-bottom-color: #0070F3;
+}
+
+/* Hide default HeroUI tab underline */
+.custom-tab-item [aria-selected="true"]::after {
+  display: none !important;
+}
+
+/* Hide scrollbar but keep functionality */
+.hide-scrollbar::-webkit-scrollbar {
+  height: 0;
+  width: 0;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

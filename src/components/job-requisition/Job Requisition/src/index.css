@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+.rtl {
+  direction: rtl;
+}
+
+.ltr {
+  direction: ltr;
+}
+
+/* Tab styling */
+.wise-tab {
+  padding: 0.75rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #666;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s;
+}
+
+.wise-tab:hover {
+  color: #333;
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.wise-tab.active {
+  color: #0066FF;
+  border-bottom-color: #0066FF;
+  font-weight: 500;
+}
+
+/* For the "wise-blue" color we're using in the Sidebar */
+.text-wise-blue {
+  color: #0066FF;
+}
+
+.bg-wise-blue {
+  background-color: #0066FF;
+}
+
+.bg-wise-light-blue {
+  background-color: rgba(0, 102, 255, 0.1);
+}
+
+/* RTL Support for icons and layout */
+.rtl .wise-tab svg,
+.rtl .sidebar-icon {
+  transform: scaleX(-1);
+}
+
+/* Additional responsive breakpoints */
+@layer components {
+  .xs\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Chart responsive styling */
+.recharts-wrapper {
+  width: 100% !important;
+}
+
+.recharts-surface {
+  width: 100% !important;
+}
+
+/* Remove pulse animation */
+/* .pulse-animation {
+  animation: pulse-border 2s ease-in-out 2;
+}
+
+@keyframes pulse-border {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 102, 255, 0.2);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(0, 102, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 102, 255, 0);
+  }
+} */

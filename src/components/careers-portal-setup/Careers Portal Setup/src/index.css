@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --wise-blue: #0066ff;
+  --wise-light-blue: #e6f0ff;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.wise-tab {
+  @apply flex items-center gap-2 px-5 py-3.5 text-default-600 border-b-2 border-transparent transition-all;
+}
+
+.wise-tab:hover:not(.active) {
+  @apply bg-default-100;
+}
+
+.wise-tab.active {
+  @apply text-wise-blue border-wise-blue font-medium;
+}
+
+/* RTL Support */
+.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+.ltr {
+  direction: ltr;
+  text-align: left;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Portal Preview Frame */
+.portal-preview-frame {
+  transition: all 0.4s ease;
+  transform-origin: top center;
+}
+
+/* Animation classes */
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.slide-in {
+  animation: slideIn 0.4s ease-out;
+}
+
+@keyframes slideIn {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}

@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Inter', sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+#root {
+  height: 100%;
+}
+
+.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+.ltr {
+  direction: ltr;
+  text-align: left;
+}
+
+.rtl .icon-flip {
+  transform: scaleX(-1);
+}
+
+.tab-active {
+  color: #0070ff;
+  border-bottom: 2px solid #0070ff;
+}
+
+.tab-inactive {
+  color: #71717a;
+}
+
+/* Added styles for candidate tab toggle groups */
+.toggle-group {
+  display: flex;
+  background-color: #f5f5f5;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.toggle-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: transparent;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-size: 0.875rem;
+}
+
+.toggle-button-active {
+  background-color: #e1f0ff;
+  color: #0070ff;
+  font-weight: 500;
+}
+
+.toggle-button-active svg {
+  color: #0070ff;
+}
+
+.toggle-button-inactive {
+  color: #555;
+}
+
+.toggle-button-inactive:hover {
+  background-color: rgba(0,0,0,0.05);
+}
+
+.toggle-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.rtl .toggle-icon {
+  transform: scaleX(-1);
+}
+
+/* Hide inner vertical scrollbar for Candidate content only */
+.candidate-scroll {
+  overflow-y: auto;
+  scrollbar-width: none; /* Firefox */
+}
+.candidate-scroll::-webkit-scrollbar { /* Chrome, Safari */
+  display: none;
+}
