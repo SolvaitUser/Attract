@@ -3,12 +3,29 @@ import React from "react";
 export type Language = "en" | "ar";
 export type TabKey = "dashboard" | "job-requisition" | "candidate" | "interview" | "offer" | "onboarding" | "careers-portal-setup" | "settings";
 
+// Helper function to get page title based on active tab and language
+export const getPageTitle = (tab: TabKey, language: Language): string => {
+  const titles = {
+    dashboard: { en: "Dashboard", ar: "لوحة المعلومات" },
+    "job-requisition": { en: "Job Requisition", ar: "طلبات الوظائف" },
+    candidate: { en: "Candidate", ar: "المرشحين" },
+    interview: { en: "Interview", ar: "المقابلة" },
+    offer: { en: "Offer", ar: "العروض" },
+    onboarding: { en: "Onboarding", ar: "التأهيل" },
+    "careers-portal-setup": { en: "Careers Portal Setup", ar: "إعداد بوابة الوظائف" },
+    settings: { en: "Settings", ar: "الإعدادات" },
+  };
+  return titles[tab][language];
+};
+
 interface AppContextType {
   language: Language;
   setLanguage: (language: Language) => void;
   direction: "ltr" | "rtl";
   activeTab: TabKey;
   setActiveTab: (key: TabKey) => void;
+  sidebarCollapsed: boolean;
+  setSidebarCollapsed: (collapsed: boolean) => void;
 }
 
 const AppContext = React.createContext<AppContextType>({
@@ -17,11 +34,18 @@ const AppContext = React.createContext<AppContextType>({
   direction: "ltr",
   activeTab: "dashboard",
   setActiveTab: () => {},
+  sidebarCollapsed: false,
+  setSidebarCollapsed: () => {},
 });
 
 export const AppProvider: React.FC<{children: React.ReactNode}> = ({ children }) => {
   const [language, setLanguage] = React.useState<Language>("en");
   const [activeTab, setActiveTab] = React.useState<TabKey>("dashboard");
+  const [sidebarCollapsed, setSidebarCollapsed] = React.useState<boolean>(() => {
+    // Initialize from localStorage, default to expanded
+    const saved = localStorage.getItem("attract-sidebar-collapsed");
+    return saved ? JSON.parse(saved) : false;
+  });
 
   const direction = language === "ar" ? "rtl" : "ltr";
 
@@ -98,6 +122,11 @@ export const AppProvider: React.FC<{children: React.ReactNode}> = ({ children })
     }
   }, [activeTab]);
 
+  // Persist sidebar collapsed state to localStorage
+  React.useEffect(() => {
+    localStorage.setItem("attract-sidebar-collapsed", JSON.stringify(sidebarCollapsed));
+  }, [sidebarCollapsed]);
+
   return (
     <AppContext.Provider
       value={{
@@ -106,6 +135,8 @@ export const AppProvider: React.FC<{children: React.ReactNode}> = ({ children })
         direction,
         activeTab,
         setActiveTab,
+        sidebarCollapsed,
+        setSidebarCollapsed,
       }}
     >
       {children}
