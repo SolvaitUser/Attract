@@ -5,24 +5,24 @@
 @tailwind utilities;
 
 :root {
-  --wise-blue: #0066ff;
-  --wise-light-blue: #e6f0ff;
+  --attract-blue: #0066ff;
+  --attract-light-blue: #e6f0ff;
 }
 
 body {
   font-family: 'Inter', sans-serif;
 }
 
-.wise-tab {
+.attract-tab {
   @apply flex items-center gap-2 px-5 py-3.5 text-default-600 border-b-2 border-transparent transition-all;
 }
 
-.wise-tab:hover:not(.active) {
+.attract-tab:hover:not(.active) {
   @apply bg-default-100;
 }
 
-.wise-tab.active {
-  @apply text-wise-blue border-wise-blue font-medium;
+.attract-tab.active {
+  @apply text-attract-blue border-attract-blue font-medium;
 }
 
 /* RTL Support */

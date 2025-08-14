@@ -23,7 +23,7 @@ body {
 }
 
 /* Tab styling */
-.wise-tab {
+.attract-tab {
   padding: 0.75rem 1.25rem;
   display: flex;
   align-items: center;
@@ -33,32 +33,32 @@ body {
   transition: all 0.2s;
 }
 
-.wise-tab:hover {
+.attract-tab:hover {
   color: #333;
   background-color: rgba(0, 0, 0, 0.02);
 }
 
-.wise-tab.active {
+.attract-tab.active {
   color: #0066FF;
   border-bottom-color: #0066FF;
   font-weight: 500;
 }
 
-/* For the "wise-blue" color we're using in the Sidebar */
-.text-wise-blue {
+/* For the "attract-blue" color we're using in the Sidebar */
+.text-attract-blue {
   color: #0066FF;
 }
 
-.bg-wise-blue {
+.bg-attract-blue {
   background-color: #0066FF;
 }
 
-.bg-wise-light-blue {
+.bg-attract-light-blue {
   background-color: rgba(0, 102, 255, 0.1);
 }
 
 /* RTL Support for icons and layout */
-.rtl .wise-tab svg,
+.rtl .attract-tab svg,
 .rtl .sidebar-icon {
   transform: scaleX(-1);
 }

@@ -342,7 +342,7 @@ export const PerformanceMetrics: React.FC = () => {
     },
     {
       id: "source-5",
-      name: { en: "Wise Recruitment Internal Benchmarks", ar: "معايير التوظيف الداخلية في وايز" },
+              name: { en: "Attract Recruitment Internal Benchmarks", ar: "معايير التوظيف الداخلية في Attract" },
       description: { 
         en: "Historical performance data from our own recruitment operations", 
         ar: "بيانات الأداء التاريخية من عمليات التوظيف الخاصة بنا" 

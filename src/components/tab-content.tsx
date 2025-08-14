@@ -69,8 +69,8 @@ export const TabContent: React.FC = () => {
   if (window.location.pathname === "/candidate-portal") {
     return (
       <div className="flex flex-col items-center justify-center p-10 mt-8">
-        <div className="w-20 h-20 rounded-full bg-wise-light-blue flex items-center justify-center mb-4">
-          <Icon icon="lucide:globe" className="text-wise-blue w-10 h-10" />
+        <div className="w-20 h-20 rounded-full bg-attract-light-blue flex items-center justify-center mb-4">
+          <Icon icon="lucide:globe" className="text-attract-blue w-10 h-10" />
         </div>
         <h2 className="text-2xl font-semibold text-gray-800 mb-2">
           {language === "en" ? "Candidate Portal" : "بوابة المرشحين"}
@@ -87,8 +87,8 @@ export const TabContent: React.FC = () => {
   // For other tabs, show the placeholder content
   return (
     <div className="flex flex-col items-center justify-center p-10 mt-8">
-      <div className="w-20 h-20 rounded-full bg-wise-light-blue flex items-center justify-center mb-4">
-        <Icon icon={tabInfo.icon} className="text-wise-blue w-10 h-10" />
+              <div className="w-20 h-20 rounded-full bg-attract-light-blue flex items-center justify-center mb-4">
+          <Icon icon={tabInfo.icon} className="text-attract-blue w-10 h-10" />
       </div>
       <h2 className="text-2xl font-semibold text-gray-800 mb-2">
         {tabInfo.title[language]}

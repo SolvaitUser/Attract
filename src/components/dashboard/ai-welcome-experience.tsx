@@ -19,7 +19,7 @@ export const AIWelcomeExperience: React.FC<AIWelcomeExperienceProps> = ({ isOpen
     {
       title: { en: "Meet Your AI Recruitment Assistant", ar: "تعرّف على مساعد التوظيف بالذكاء الاصطناعي" },
       description: { 
-        en: "Hi there! I'm Wise AI, your intelligent recruitment assistant. I'll help you make better hiring decisions with data-driven insights.", 
+        en: "Hi there! I'm Attract AI, your intelligent recruitment assistant. I'll help you make better hiring decisions with data-driven insights.", 
         ar: "مرحبًا! أنا وايز AI، مساعد التوظيف الذكي. سأساعدك في اتخاذ قرارات توظيف أفضل من خلال رؤى مبنية على البيانات." 
       },
       icon: "lucide:sparkles"
@@ -224,8 +224,8 @@ export const AIWelcomeExperience: React.FC<AIWelcomeExperienceProps> = ({ isOpen
                           className="text-xl font-semibold text-white mt-6 text-center"
                         >
                           {language === "en" 
-                            ? "Initializing Wise AI" 
-                            : "تهيئة الذكاء الاصطناعي Wise"}
+                                    ? "Initializing Attract AI"
+        : "تهيئة الذكاء الاصطناعي Attract"}
                         </motion.h2>
                         
                         <motion.div 

@@ -10,10 +10,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        "wise-blue": "#0078FF",
-        "wise-light-blue": "#EBF5FF",
-        "wise-gray": "#F7F9FC",
-        "wise-text": "#333333",
+        "attract-blue": "#0078FF",
+        "attract-light-blue": "#EBF5FF",
+        "attract-gray": "#F7F9FC",
+        "attract-text": "#333333",
       },
     },
   },

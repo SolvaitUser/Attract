@@ -156,7 +156,7 @@ export const AiAssistant: React.FC = () => {
       {/* AI Pulse Effect */}
       <div className="absolute inset-0 pointer-events-none">
         <motion.div 
-          className="absolute top-0 right-0 h-20 w-20 bg-wise-blue rounded-full opacity-5"
+          className="absolute top-0 right-0 h-20 w-20 bg-attract-blue rounded-full opacity-5"
           style={{ filter: "blur(20px)" }}
           animate={{ 
             scale: [1, 1.2, 1],
@@ -184,9 +184,9 @@ export const AiAssistant: React.FC = () => {
               }}
               className="mr-2"
             >
-              <Icon icon="lucide:sparkles" className="w-5 h-5 text-wise-blue" />
+              <Icon icon="lucide:sparkles" className="w-5 h-5 text-attract-blue" />
             </motion.div>
-            {language === "en" ? "Wise AI Assistant" : "مساعد وايز الذكي"}
+            {language === "en" ? "Attract AI Assistant" : "مساعد Attract الذكي"}
           </h2>
           
           <motion.div 
@@ -290,7 +290,7 @@ export const AiAssistant: React.FC = () => {
                   
                   <div>
                     <h3 className="font-semibold text-lg mb-1">
-                      {language === "en" ? "Wise AI" : "وايز AI"}
+                      {language === "en" ? "Attract AI" : "Attract AI"}
                     </h3>
                     <p className="text-sm text-blue-100">
                       {language === "en" 

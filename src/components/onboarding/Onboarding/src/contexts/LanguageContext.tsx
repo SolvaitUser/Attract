@@ -13,7 +13,7 @@ interface LanguageContextType {
 
 const translations = {
   en: {
-    welcomeToWise: 'Welcome to Wise',
+            welcomeToWise: 'Welcome to Attract',
     recruitment: 'Recruitment',
     analytics: 'Analytics',
     jobRequisition: 'Job Requisition',
@@ -879,7 +879,7 @@ const translations = {
     },
   },
   ar: {
-    welcomeToWise: 'مرحبًا بك في وايز',
+            welcomeToWise: 'مرحبًا بك في Attract',
     recruitment: 'التوظيف',
     analytics: 'التحليلات',
     jobRequisition: 'طلب الوظيفة',

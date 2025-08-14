@@ -194,7 +194,7 @@ export const AICommandBar: React.FC<AICommandBarProps> = ({ isOpen, onClose, lan
                     onChange={(e) => setQuery(e.target.value)}
                     placeholder={
                       language === "en" 
-                        ? "Ask Wise AI about your recruitment..." 
+                        ? "Ask Attract AI about your recruitment..." 
                         : "اسأل وايز AI عن التوظيف الخاص بك..."
                     }
                     size="lg"
@@ -210,7 +210,7 @@ export const AICommandBar: React.FC<AICommandBarProps> = ({ isOpen, onClose, lan
                           ease: "linear" 
                         }}
                       >
-                        <Icon icon="lucide:sparkles" className="text-wise-blue w-6 h-6" />
+                        <Icon icon="lucide:sparkles" className="text-attract-blue w-6 h-6" />
                       </motion.div>
                     }
                     className="bg-transparent"
@@ -498,7 +498,7 @@ export const AICommandBar: React.FC<AICommandBarProps> = ({ isOpen, onClose, lan
                     >
                       <Icon icon="lucide:sparkles" className="w-3 h-3 text-blue-500" />
                     </motion.div>
-                    {language === "en" ? "Wise AI" : "وايز AI"}
+                    {language === "en" ? "Attract AI" : "Attract AI"}
                   </div>
                 </div>
               </motion.div>

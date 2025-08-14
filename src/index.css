@@ -42,14 +42,14 @@ body {
   border-radius: 20px;
 }
 
-/* Lighten Wise blues globally */
+/* Lighten Attract blues globally */
 :root {
-  --wise-blue: #3B82F6;       /* was #0066ff – lighter, Tailwind blue-500 */
-  --wise-light-blue: #EFF6FF; /* revert to previous light blue */
+  --attract-blue: #3B82F6;       /* was #0066ff – lighter, Tailwind blue-500 */
+  --attract-light-blue: #EFF6FF; /* revert to previous light blue */
 }
 
 /* Utility classes mapping to CSS variables (for plain CSS usage) */
-.text-wise-blue { color: var(--wise-blue); }
-.bg-wise-blue { background-color: var(--wise-blue); }
-.bg-wise-light-blue { background-color: var(--wise-light-blue); }
-.border-wise-blue { border-color: var(--wise-blue); }
+.text-attract-blue { color: var(--attract-blue); }
+.bg-attract-blue { background-color: var(--attract-blue); }
+.bg-attract-light-blue { background-color: var(--attract-light-blue); }
+.border-attract-blue { border-color: var(--attract-blue); }

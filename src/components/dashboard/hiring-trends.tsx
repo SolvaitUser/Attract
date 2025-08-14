@@ -412,7 +412,7 @@ export const HiringTrends: React.FC = () => {
           <p className="text-sm text-gray-500">
             {language === "en" ? "Total Hires" : "إجمالي التعيينات"}
           </p>
-          <p className="text-2xl font-semibold text-wise-blue">
+          <p className="text-2xl font-semibold text-attract-blue">
             {chartData.reduce((sum, item) => sum + item.hired, 0)}
           </p>
         </div>
@@ -514,7 +514,7 @@ export const HiringTrends: React.FC = () => {
             <>
               <ModalHeader className="flex flex-col gap-1">
                 <div className="flex items-center gap-2">
-                  <Icon icon="lucide:clipboard-list" className="w-5 h-5 text-wise-blue" />
+                  <Icon icon="lucide:clipboard-list" className="w-5 h-5 text-attract-blue" />
                   <span className="text-xl">
                     {language === "en" ? "Annual Hiring Plan" : "خطة التوظيف السنوية"}
                   </span>
@@ -529,7 +529,7 @@ export const HiringTrends: React.FC = () => {
                   variant="underlined"
                   classNames={{
                     tabList: "gap-6",
-                    cursor: "w-full bg-wise-blue",
+                    cursor: "w-full bg-attract-blue",
                     tab: "max-w-fit px-0 h-12"
                   }}
                 >
@@ -550,8 +550,8 @@ export const HiringTrends: React.FC = () => {
                             <span className="text-sm text-gray-500">
                               {language === "en" ? "Total Positions" : "إجمالي المناصب"}
                             </span>
-                            <div className="bg-wise-blue bg-opacity-10 p-2 rounded-full">
-                              <Icon icon="lucide:users" className="w-5 h-5 text-wise-blue" />
+                                    <div className="bg-attract-blue bg-opacity-10 p-2 rounded-full">
+          <Icon icon="lucide:users" className="w-5 h-5 text-attract-blue" />
                             </div>
                           </div>
                           <div className="mt-2">
@@ -896,11 +896,11 @@ export const HiringTrends: React.FC = () => {
                         </TableBody>
                       </Table>
                       
-                      <div className="bg-wise-light-blue border-l-4 border-wise-blue p-4 rounded-r-lg">
+                      <div className="bg-attract-light-blue border-l-4 border-attract-blue p-4 rounded-r-lg">
                         <div className="flex items-start">
-                          <Icon icon="lucide:lightbulb" className="w-5 h-5 text-wise-blue mr-2 mt-0.5" />
+                          <Icon icon="lucide:lightbulb" className="w-5 h-5 text-attract-blue mr-2 mt-0.5" />
                           <div>
-                            <h4 className="font-medium text-wise-blue">
+                            <h4 className="font-medium text-attract-blue">
                               {language === "en" ? "AI Recommendation" : "توصية الذكاء الاصطناعي"}
                             </h4>
                             <p className="text-sm text-gray-700 mt-1">

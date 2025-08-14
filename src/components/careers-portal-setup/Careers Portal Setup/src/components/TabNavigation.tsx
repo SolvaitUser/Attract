@@ -34,7 +34,7 @@ export const TabNavigation: React.FC<TabNavigationProps> = ({ activeTab, onTabCh
         {tabs.map((tab) => (
           <button
             key={tab.id}
-            className={`wise-tab ${activeTab === tab.id ? "active" : ""}`}
+            className={`attract-tab ${activeTab === tab.id ? "active" : ""}`}
             onClick={() => onTabChange(tab.id)}
           >
             <Icon icon={tab.icon} width={18} />

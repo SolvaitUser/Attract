@@ -191,8 +191,8 @@ export const SettingsView: React.FC = () => {
     if (sectionKey === "organization" && itemKey === "company-profile") {
       return (
         <div className="space-y-4">
-          <Input label={language === "en" ? "Company Name" : "اسم الشركة"} value={getVal(itemKey, "companyName", "Wise Corp")} onChange={(e) => setVal(itemKey, "companyName", e.target.value)} />
-          <Input label={language === "en" ? "Website" : "الموقع الإلكتروني"} value={getVal(itemKey, "website", "https://wise.example.com")} onChange={(e) => setVal(itemKey, "website", e.target.value)} />
+                  <Input label={language === "en" ? "Company Name" : "اسم الشركة"} value={getVal(itemKey, "companyName", "Attract Corp")} onChange={(e) => setVal(itemKey, "companyName", e.target.value)} />
+        <Input label={language === "en" ? "Website" : "الموقع الإلكتروني"} value={getVal(itemKey, "website", "https://attract.example.com")} onChange={(e) => setVal(itemKey, "website", e.target.value)} />
           <Textarea label={language === "en" ? "Description" : "الوصف"} value={getVal(itemKey, "description", "") } onChange={(e) => setVal(itemKey, "description", e.target.value)} />
           <div className="flex items-center gap-3">
             <Button color="primary" onPress={() => console.log("Save", itemKey, formState[itemKey])}>
@@ -319,11 +319,11 @@ export const SettingsView: React.FC = () => {
           <button
             key={section.key}
             onClick={() => handleOpenSection(section.key)}
-            className="text-left border border-gray-200 rounded-lg p-4 bg-white hover:border-wise-blue transition-colors"
+            className="text-left border border-gray-200 rounded-lg p-4 bg-white hover:border-attract-blue transition-colors"
           >
             <div className="flex items-start gap-3">
-              <div className="mt-1 w-9 h-9 rounded-md bg-wise-light-blue flex items-center justify-center">
-                <Icon icon={section.icon} className="text-wise-blue w-5 h-5" />
+                      <div className="mt-1 w-9 h-9 rounded-md bg-attract-light-blue flex items-center justify-center">
+          <Icon icon={section.icon} className="text-attract-blue w-5 h-5" />
               </div>
               <div className="flex-1">
                 <h3 className="text-base font-semibold text-gray-800">
@@ -358,7 +358,7 @@ export const SettingsView: React.FC = () => {
           <div className="absolute right-0 top-0 h-full w-full sm:w-[520px] bg-white shadow-xl z-50 flex flex-col">
             <div className="flex items-center justify-between p-4 border-b border-gray-200">
               <div className="flex items-center gap-2">
-                <Icon icon={currentSection.icon} className="text-wise-blue w-5 h-5" />
+                <Icon icon={currentSection.icon} className="text-attract-blue w-5 h-5" />
                 <span className="font-semibold text-gray-800">
                   {language === "en" ? currentSection.title.en : currentSection.title.ar}
                 </span>
@@ -377,7 +377,7 @@ export const SettingsView: React.FC = () => {
                         <button
                           onClick={() => setSelectedItemIdx(idx)}
                           className={`w-full text-left px-2 py-1 rounded-md text-sm transition-colors ${
-                            active ? "bg-wise-light-blue text-wise-blue" : "hover:bg-gray-100 text-gray-700"
+                            active ? "bg-attract-light-blue text-attract-blue" : "hover:bg-gray-100 text-gray-700"
                           }`}
                         >
                           {language === "en" ? item.label.en : item.label.ar}

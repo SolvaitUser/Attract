@@ -284,7 +284,7 @@ export const CandidateSources: React.FC = () => {
             <>
               <ModalHeader className="flex flex-col gap-1">
                 <div className="flex items-center gap-2">
-                  <Icon icon="lucide:bar-chart-2" className="w-5 h-5 text-wise-blue" />
+                  <Icon icon="lucide:bar-chart-2" className="w-5 h-5 text-attract-blue" />
                   <span>{language === "en" ? "Candidate Sources Analytics" : "تحليلات مصادر المرشحين"}</span>
                 </div>
               </ModalHeader>
@@ -734,9 +734,9 @@ export const CandidateSources: React.FC = () => {
                     }
                   >
                     <div className="space-y-6 py-4">
-                      <div className="bg-wise-light-blue p-4 rounded-lg">
+                      <div className="bg-attract-light-blue p-4 rounded-lg">
                         <div className="flex items-start mb-4">
-                          <div className="bg-wise-blue rounded-full p-1 mr-3">
+                          <div className="bg-attract-blue rounded-full p-1 mr-3">
                             <Icon icon="lucide:sparkles" className="w-5 h-5 text-white" />
                           </div>
                           <div>
@@ -754,7 +754,7 @@ export const CandidateSources: React.FC = () => {
                         <div className="space-y-4">
                           <div className="bg-white p-4 rounded-lg border border-blue-100">
                             <h4 className="font-medium text-gray-800 flex items-center">
-                              <Icon icon="lucide:check-circle" className="w-5 h-5 text-wise-blue mr-2" />
+                              <Icon icon="lucide:check-circle" className="w-5 h-5 text-attract-blue mr-2" />
                               {language === "en" ? "Expand Employee Referral Program" : "توسيع برنامج إحالة الموظفين"}
                             </h4>
                             <p className="text-sm text-gray-600 mt-1 ml-7">
@@ -766,7 +766,7 @@ export const CandidateSources: React.FC = () => {
                           
                           <div className="bg-white p-4 rounded-lg border border-blue-100">
                             <h4 className="font-medium text-gray-800 flex items-center">
-                              <Icon icon="lucide:check-circle" className="w-5 h-5 text-wise-blue mr-2" />
+                              <Icon icon="lucide:check-circle" className="w-5 h-5 text-attract-blue mr-2" />
                               {language === "en" ? "Optimize LinkedIn Strategy" : "تحسين استراتيجية لينكد إن"}
                             </h4>
                             <p className="text-sm text-gray-600 mt-1 ml-7">
@@ -778,7 +778,7 @@ export const CandidateSources: React.FC = () => {
                           
                           <div className="bg-white p-4 rounded-lg border border-blue-100">
                             <h4 className="font-medium text-gray-800 flex items-center">
-                              <Icon icon="lucide:check-circle" className="w-5 h-5 text-wise-blue mr-2" />
+                              <Icon icon="lucide:check-circle" className="w-5 h-5 text-attract-blue mr-2" />
                               {language === "en" ? "Department-Specific Sourcing" : "مصادر خاصة بالقسم"}
                             </h4>
                             <p className="text-sm text-gray-600 mt-1 ml-7">
@@ -790,7 +790,7 @@ export const CandidateSources: React.FC = () => {
                           
                           <div className="bg-white p-4 rounded-lg border border-blue-100">
                             <h4 className="font-medium text-gray-800 flex items-center">
-                              <Icon icon="lucide:check-circle" className="w-5 h-5 text-wise-blue mr-2" />
+                              <Icon icon="lucide:check-circle" className="w-5 h-5 text-attract-blue mr-2" />
                               {language === "en" ? "Careers Portal Enhancement" : "تحسين بوابة الوظائف"}
                             </h4>
                             <p className="text-sm text-gray-600 mt-1 ml-7">

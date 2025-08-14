@@ -100,7 +100,7 @@ export const RecruitmentFunnel: React.FC = () => {
     >
       {/* Enhanced AI visual indicator with animated neurons */}
       <motion.div 
-        className="absolute -top-20 -right-20 h-40 w-40 bg-wise-blue opacity-5 rounded-full"
+        className="absolute -top-20 -right-20 h-40 w-40 bg-attract-blue opacity-5 rounded-full"
         style={{ filter: "blur(30px)" }}
         animate={{ 
           scale: [1, 1.2, 1],
@@ -445,9 +445,9 @@ export const RecruitmentFunnel: React.FC = () => {
                     <h3 className="text-lg font-medium text-gray-800 mb-2">
                       {language === "en" ? "AI Recommendations" : "توصيات الذكاء الاصطناعي"}
                     </h3>
-                    <div className="bg-wise-light-blue border-l-4 border-wise-blue p-4 rounded-r-lg space-y-3">
+                    <div className="bg-attract-light-blue border-l-4 border-attract-blue p-4 rounded-r-lg space-y-3">
                       <div className="flex items-start">
-                        <Icon icon="lucide:check-circle" className="w-5 h-5 text-wise-blue mr-2 mt-0.5" />
+                        <Icon icon="lucide:check-circle" className="w-5 h-5 text-attract-blue mr-2 mt-0.5" />
                         <p className="text-sm">
                           {language === "en" 
                             ? "Review technical assessment criteria - may be too stringent for current market" 
@@ -455,7 +455,7 @@ export const RecruitmentFunnel: React.FC = () => {
                         </p>
                       </div>
                       <div className="flex items-start">
-                        <Icon icon="lucide:check-circle" className="w-5 h-5 text-wise-blue mr-2 mt-0.5" />
+                        <Icon icon="lucide:check-circle" className="w-5 h-5 text-attract-blue mr-2 mt-0.5" />
                         <p className="text-sm">
                           {language === "en" 
                             ? "Implement pre-interview reminder system to reduce no-show rate" 
@@ -463,7 +463,7 @@ export const RecruitmentFunnel: React.FC = () => {
                         </p>
                       </div>
                       <div className="flex items-start">
-                        <Icon icon="lucide:check-circle" className="w-5 h-5 text-wise-blue mr-2 mt-0.5" />
+                        <Icon icon="lucide:check-circle" className="w-5 h-5 text-attract-blue mr-2 mt-0.5" />
                         <p className="text-sm">
                           {language === "en" 
                             ? "Conduct interviewer training focused on cultural fit assessment" 

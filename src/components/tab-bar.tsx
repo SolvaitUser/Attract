@@ -31,15 +31,15 @@ export const TabBar: React.FC = () => {
         color="primary"
         classNames={{
           tabList: "gap-0",
-          cursor: "bg-wise-blue h-0.5 shadow-none rounded-none data-[active=true]:opacity-0",
-          tab: "data-[selected=true]:text-wise-blue data-[selected=true]:font-medium data-[selected=true]:opacity-100"
+                  cursor: "bg-attract-blue h-0.5 shadow-none rounded-none data-[active=true]:opacity-0",
+        tab: "data-[selected=true]:text-attract-blue data-[selected=true]:font-medium data-[selected=true]:opacity-100"
         }}
       >
         {TABS.map((tab) => (
           <Tab
             key={tab.key}
             title={
-              <div className={`${tabStyle} ${activeTab === tab.key ? 'text-wise-blue font-medium' : ''}`} style={{ flexDirection: language === "ar" ? "row-reverse" : "row" }}>
+              <div className={`${tabStyle} ${activeTab === tab.key ? 'text-attract-blue font-medium' : ''}`} style={{ flexDirection: language === "ar" ? "row-reverse" : "row" }}>
                 <Icon icon={tab.icon} className="w-5 h-5" />
                 <span className="whitespace-nowrap">{language === "en" ? tab.label.en : tab.label.ar}</span>
               </div>

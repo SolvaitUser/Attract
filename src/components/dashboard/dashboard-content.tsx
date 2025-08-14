@@ -50,7 +50,7 @@ export const DashboardContent: React.FC = () => {
   const [pulseAIButton, setPulseAIButton] = React.useState(true);
   
   React.useEffect(() => {
-    const hasSeenWelcome = localStorage.getItem("wise_ai_welcome_seen");
+            const hasSeenWelcome = localStorage.getItem("attract_ai_welcome_seen");
     if (hasSeenWelcome) {
       setShowAIWelcome(false);
     }
@@ -69,7 +69,7 @@ export const DashboardContent: React.FC = () => {
   
   const handleCloseWelcome = () => {
     setShowAIWelcome(false);
-    localStorage.setItem("wise_ai_welcome_seen", "true");
+            localStorage.setItem("attract_ai_welcome_seen", "true");
   };
 
   React.useEffect(() => {
@@ -131,7 +131,7 @@ export const DashboardContent: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            {language === "en" ? "Welcome to Wise" : "مرحبًا بك في وايز"}
+            {language === "en" ? "Welcome to Attract" : "مرحبًا بك في Attract"}
           </motion.h1>
 
           <div className="relative ml-3">
